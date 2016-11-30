@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your page title</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+</head>
+
+<body>
+
+	<style scoped>
+		.button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+    </style>
+	<!-- PRODUCTS TABLE -->
+   <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Όνομα</th>
+            <th>Τιμή</th>
+            <th>Απόθεμα</th>
+			<th>Ενέργεια</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+			<td> <button class="button-error pure-button">Διαγραφή</button> <button class="button-secondary pure-button">Επεξεργασία</button> </td>
+        </tr>
+
+        
+    </tbody>
+</table>
+<!-- USERS TABLE -->
+   <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Όνομα</th>
+            <th>Επώνυμο</th>
+            <th>Όνομα χρήστη</th>
+			<th>Κωδικός</th>
+			<th>Ενέργεια</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+			<td>#</td>
+			<td><button class="button-error pure-button">Διαγραφή</button></td>
+        </tr>
+    </tbody>
+</table>
+<!-- ORDERS TABLE -->
+   <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Όνομα</th>
+            <th>Όνομα χρήστη</th>
+			<th>Ποσότητα</th>
+			<th>Ημερομινία</th>
+			<th>Ενέργεια</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+			<td>#</td>
+			<td><button class="button-success pure-button">Αποστολή</button> <button class="button-error pure-button">Ακύρωση</button></td>
+        </tr>
+    </tbody>
+</table>
+<!-- SIGN IN FORM -->
+<center>
+<form class="pure-form pure-form-stacked">
+ 
+    <fieldset>
+        <legend>Γεία σας</legend>
+
+        
+        <input id="username" type="text" placeholder="Όνομα χρήστη">
+        <input id="password" type="password" placeholder="Κωδικός">
+
+       
+
+        <button type="submit" class="pure-button pure-button-primary">Σύνδεση΄</button>
+    </fieldset>
+</form> 
+</center>
+
+<!-- SIGN UP FORM -->
+<center>
+<form class="pure-form pure-form-stacked">
+ 
+    <fieldset>
+        <legend>Εγγραφή στο κατάστημα</legend>
+
+        
+        <input id="first_name" type="text" placeholder="Όνομα">
+        <input id="last_name" type="text" placeholder="Επώνυμο">
+		<input id="password" type="password" placeholder="Κωδικός">
+		<input id="re_password" type="password" placeholder="Ξανά κωδικό">
+		
+       
+
+        <div class="pure-controls">
+            <label for="cb" class="pure-checkbox">
+                <input id="cb" type="checkbox"> Έχω διαβάσει τους όρους και συμφωνώ!
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Εγγραφή</button>
+        </div>
+    </fieldset>
+</form> 
+</center>
+
+<!-- INSERT PRODUCT  -->
+<form class="pure-form">
+    <fieldset class="pure-group">
+        <input id="product_name" type="text" class="pure-input-1-2" placeholder="Όνομα">
+        <input id="product_price" type="text" class="pure-input-1-2" placeholder="Τιμή">
+		<input id="product_quantity" type="text" class="pure-input-1-2" placeholder="Απόθεμα">
+    </fieldset>
+	<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Εισαγωγή</button>
+</form>
+<!-- UPDATE PRODUCT  -->
+<form class="pure-form">
+    <fieldset class="pure-group">
+        <input id="product_name" type="text" class="pure-input-1-2" placeholder="Όνομα">
+        <input id="product_price" type="text" class="pure-input-1-2" placeholder="Τιμή">
+		<input id="product_quantity" type="text" class="pure-input-1-2" placeholder="Απόθεμα">
+    </fieldset>
+	<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Ανανέωση</button>
+</form>
+</body>
+</html>
